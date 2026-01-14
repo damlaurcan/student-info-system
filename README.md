@@ -4,6 +4,9 @@ Student Information System project for System Programming course.
 
 ## Project Status
 - Week 1 planning completed
+- Week 2 planning completed
+- Week 3 planning completed
+- Week 4 planning completed
 
 ## Team Members
 - Student 1 (Project Manager): Damla Urcan
