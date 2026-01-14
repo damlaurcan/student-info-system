@@ -6,3 +6,21 @@ services:
     container_name: student_info_system
     stdin_open: true
     tty: true
+    version: '3.8'
+
+services:
+  db:
+    image: postgres:latest  # İşte "Base Image" burası
+    container_name: student_info_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: student_system
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+  
