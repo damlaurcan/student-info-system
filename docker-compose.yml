@@ -57,5 +57,17 @@ volumes:
       timeout: 5s
       retries: 5
 
+##Docker logging driver + limit
+services:
+  cpp-app:
+    image: elifkokden/cpp-app:latest
+    container_name: cpp-app
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
 
   
