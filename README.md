@@ -19,15 +19,11 @@ Student Information System project for System Programming course.
 - Docker
 - GitHub
 
-- ## Docker Hub
+## Docker Image
+Docker Hub: https://hub.docker.com/r/elifkokden/student-info-system
 
-The project Docker image is available on Docker Hub.
-
-Docker Hub Image:
-https://hub.docker.com/r/studentinfosys/student-info-system
-
-### Run with Docker
-
+Pull & Run:
 ```bash
-docker pull studentinfosys/student-info-system
-docker run studentinfosys/student-info-system
+docker pull elifkokden/student-info-system:latest
+docker run -p 8080:8080 elifkokden/student-info-system:latest
+
