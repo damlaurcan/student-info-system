@@ -23,4 +23,16 @@ services:
 
 volumes:
   postgres_data:
+
+  services:
+  cpp-app:
+    image: elifkokden/cpp-app:latest
+    container_name: cpp-app
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 256M
+    restart: unless-stopped
+
   
